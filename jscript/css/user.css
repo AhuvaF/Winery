@@ -1,0 +1,56 @@
+
+/* עיצוב ל-div העוטף */
+.signUserFirstPage {
+    width: 400px;
+    
+    margin: auto;
+    padding: 20px;
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* עיצוב לשדות הקלט */
+.signUserFirstPage input[type="text"],
+.signUserFirstPage input[type="email"],
+.signUserFirstPage input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* עיצוב לכפתור */
+.signUserFirstPage button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ae3e1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signUserFirstPage button:hover {
+    background-color: #bc6362;
+}
+
+/* עיצוב לקישור */
+.signUserFirstPage .logIn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 120%;
+    color: #333;
+    text-decoration: none;
+}
+
+.signUserFirstPage .logIn:hover {
+    text-decoration: underline;
+}

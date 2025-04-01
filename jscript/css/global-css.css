@@ -1,0 +1,254 @@
+ * {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-size: 65%;
+  background-color: #fef6f6;
+}
+strong{
+padding-bottom:1%;
+background-color: #000000;
+color: #ffffff;
+padding-bottom: 1%;
+font-size: 0.9cm;
+margin-right: 45%;
+}
+  
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 14%  6%  minmax(70%, auto) 10%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: 0;
+}
+
+/* השורה הכי למעלה - השם של החנות */
+header {
+  /* display:flex; */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #f8f8f8;
+    padding-top: 1%;
+}
+/* שורת הניווט באתר */
+navCategory{
+  grid-column: 1/2;
+  grid-row:2/3;
+  background-color:#000000;
+  /* margin-top: 30%; */
+  color: #000000;
+  position: sticky;
+  font-size: 50px;
+  width: 100%;
+  
+}
+.categories {
+  direction: rtl;
+  display: unset;
+  justify-content: center;
+  padding:1%;
+  background-color: #000000;
+}
+/* האותיות שבתוך תפריט הניווט */
+.category {
+  color: #f8f8f8;
+  background-color: #000000;
+  font-size: 60%;
+  width: 15%;
+  margin: 2%;
+}
+.category:hover{
+  color: rgb(187, 11, 11);
+
+}
+main {
+    grid-column:1/2;
+    grid-row: 3/5;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    margin-top: 2%;
+    padding-bottom: 5%;
+}
+
+/* למעטה */
+footer {
+    grid-column: 1/2;
+    grid-row: 5/6;
+
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom:0;
+    padding-top: 0;
+   
+}
+.foo{
+  
+  color:#000000 ;
+
+}
+h5 {
+background-color: #fff;
+}
+h6{
+  background-color: #fff;
+}
+.category:hover {
+  /* text-decoration: dotted; */
+  transform: scale(1.01);
+}
+
+/* הכפתורים שעל הניווט */
+/*  */
+.icon{
+ background-color: #ffffff00;
+ color: #ffffff00;
+ direction: ltr;
+ position: relative;
+margin-right: 40%;
+}
+.bi-basket,.bi-person-circle,.bi-heart{
+ background-color: #000000;
+border-color: #00000000;
+}
+
+.btn-outline-danger {
+border-color: #000000;
+border-color: #fef6f6;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 600px) { 
+*{
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows: 9% 3% 6% 75% 7%;
+  height: 100vh;
+  margin: 0;
+}
+  header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: fixed;
+    top: 0;
+  }
+
+  main {
+    padding-top: 10%;
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  nav {
+      grid-row:3/4;
+      grid-column: 1/2;
+      color: #ffffff;
+      
+  }
+navCategory{
+  grid-row:2/3;
+  grid-column: 1/2;
+  position: fixed;
+  top: 60px;
+}
+/* h1{
+margin-right: 10%;
+} */
+  .categories {
+      direction: unset;
+      color: #ffffff;
+      padding: 1%;
+      margin-right:0;
+      margin-top: 0.5%;
+      padding-top: 0;
+  }
+  .category {
+      position: static;
+      font-size: 50%;
+      margin-top: 0;
+       padding-top: 0;
+  }
+  .subcategory {
+      position: sticky;
+  }
+  strong{
+    margin-right: 10%;
+}
+ 
+   /* nav{
+    flex-direction: row;
+    position: static;
+  
+  } */
+  footer{
+    grid-row: 5/6;
+    grid-column: 1/2;
+  color: aqua;
+  
+  }
+  .icon{
+     margin-right: 10%;
+     
+     }
+}
+
+.store-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content horizontally */
+  background-color: #000000; /* Background color for the header */
+}
+.store-logo {
+  align-items: center;
+ margin-left: 45%;
+  width: 40%; /* Keeps the logo aspect ratio */
+}
+.back-to-button {
+  height: 15%; /* גובה הכפתור */
+  width: 12%;
+  margin-right: 67%;
+  background-color: #f0f0f0; /* צבע רקע */
+  border: 3px solid rgba(155, 15, 15, 0.892); /* מסגרת שחורה לכפתור */
+  border-radius: 5px; /* פינות מעוגלות */
+  padding: 5px 10px; /* ריפוד פנימי */
+  font-size: 16px; /* גודל גופן */
+  cursor: pointer; /* עכבר יד */
+  display: inline-flex; /* תצוגה גמישה */
+  align-items: center; /* מיקום במרכז אנכי */
+  gap: 8px; /* רווח בין הסמל לטקסט */
+}
+
+.back-to-button svg {
+  margin-right: 8px; /* רווח לפני הסמל */
+}
+
+.back-to-button:hover {
+  background-color: #e0e0e0; /* צבע רקע בהיר יותר בהצבעה */
+}
+
+
+/* CSS animation */
+@keyframes grow-shrink {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2); /* מגדיל את הכפתור ב-20% */
+  }
+  100% {
+      transform: scale(1); /* חוזר לגודל המקורי */
+  }
+}
+
+.add-to-cart-button.animate-grow {
+  animation: grow-shrink 1s ease;
+}
